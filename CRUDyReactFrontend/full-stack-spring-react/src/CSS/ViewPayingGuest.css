@@ -1,0 +1,193 @@
+/* General Styles */
+.view-container {
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #ddd; /* Light background for container */
+    border-radius: 8px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem; /* Larger title */
+    font-weight: 600;
+    color: #333; /* Darker text for better readability */
+  }
+  
+  .paying-guest-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for table */
+  }
+  
+  .paying-guest-table th,
+  .paying-guest-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .paying-guest-table th {
+    background-color: #0069d9; /* Rich blue background for header */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .paying-guest-table td {
+    background-color: #ffffff;
+    color: #555; /* Slightly darker text for better contrast */
+  }
+  
+  /* Row hover effect */
+  .paying-guest-table tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+  }
+  
+  .update-btn,
+  .delete-btn {
+    padding: 10px 15px;
+    margin-right: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .update-btn {
+    background-color: #28a745; /* Green for update */
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545; /* Red for delete */
+    color: white;
+  }
+  
+  .update-btn:hover {
+    background-color: #218838; /* Darker green for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333; /* Darker red for hover */
+    transform: scale(1.05);
+  }
+  .search-container {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  /*Serch Css*/
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .form-control {
+    width: 50%;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* General Styling for Result Container */
+.result-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 90%; /* Adjusted for better responsiveness */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    overflow-x: auto; /* For smaller screens */
+    border-radius: 8px;
+    overflow: hidden; /* Rounded corners with no overflow */
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px; /* Increased padding for better spacing */
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #4CAF50; /* Eye-catching green for headers */
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.95rem; /* Slightly smaller font */
+    letter-spacing: 0.05rem;
+  }
+  
+  .table td {
+    background-color: #f7f7f7;
+    font-size: 0.9rem; /* Clean and simple font size */
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table tr:nth-child(even) td {
+    background-color: #f1f1f1; /* Alternating row colors */
+  }
+  
+  .table tr:hover td {
+    background-color: #e9e9e9; /* Highlight row on hover */
+    cursor: pointer; /* Pointer to indicate clickable rows */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.85rem; /* Slightly smaller text on small screens */
+    }
+  
+    .table th,
+    .table td {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .paying-guest-table {
+      font-size: 0.9rem;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .paying-guest-table th,
+    .paying-guest-table td {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 1.6rem; /* Slightly smaller title for mobile */
+    }
+  
+    .update-btn, .delete-btn {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  
+  

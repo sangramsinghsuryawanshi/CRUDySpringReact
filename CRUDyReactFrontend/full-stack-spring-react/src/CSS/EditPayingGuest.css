@@ -1,0 +1,113 @@
+/* General Styles */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%; /* Set a default width */
+}
+
+.text{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 10%;
+}
+
+.f {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid wheat;
+    padding: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-btn-primary {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+.btn-btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+
+/* For tablets (medium screens) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 80%; /* Increase the container width on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Slightly smaller heading */
+    }
+
+    .f {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .btn-btn-primary {
+        width: 100%; /* Make the button full width */
+        font-size: 1rem;
+        padding: 12px 0; /* Add padding to make the button easier to click */
+    }
+}
+
+/* For mobile screens (small screens) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Smaller font size for mobile */
+    }
+
+    .f {
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem; /* Smaller font for input and textarea on mobile */
+        padding: 8px; /* Reduce padding for smaller screen devices */
+    }
+
+    .btn-btn-primary {
+        width: 100%; /* Make the button full width */
+        font-size: 1rem;
+        padding: 12px 0; /* Button padding */
+    }
+}
